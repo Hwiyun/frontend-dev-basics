@@ -7,6 +7,34 @@
 * { margin: 0; padding: 0; }
 
 body { font-family: "맑은 고딕"; font-size: 0.75em; color: #333; }
+
+#join-form{
+	width: 190px;
+	margin: 100px auto;
+	padding: 0 10px 10px 10px;
+	border: 1px solid #666;
+}
+
+label.legend, input[type='text'], input[type='password'], input[type='image'] {
+	display: block;
+}
+
+label.legend, fieldset {
+	margin: 10px 0 5px 0;
+}
+
+fieldset {
+	border: none;
+}
+
+legend {
+	margin-bottom: 5px;
+}
+
+input[type='image']{
+	width: 50px;
+	margin: 10px auto 5px auto;
+}
 </style>
 </head>
 <body>
@@ -17,7 +45,7 @@ body { font-family: "맑은 고딕"; font-size: 0.75em; color: #333; }
 		
 		<br> 
 		<label class="legend">패스워드</label> 
-		<input name="passwprd" type="password">
+		<input name="password" type="password">
 
 		<fieldset>
 			<legend>생년월일</legend>
@@ -52,7 +80,7 @@ body { font-family: "맑은 고딕"; font-size: 0.75em; color: #333; }
 			<label>약관에 동의합니다.</label>
 		</fieldset>
 
-		<input type="image" value="/ch05/images/login.png">
+		<input type="image" src="/ch05/images/login.png">
 	</form>
 </body>
 </html>
