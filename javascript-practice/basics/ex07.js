@@ -14,7 +14,27 @@ var MyObject = function(name, age) {
 }
 
 var o1 = new MyObject("둘리", 10);
-var o2 = new MyObject("마이콜", 20);
+// var o1 = {
+//     name: "둘리",
+//     age: 10
+// }
 
-console.log(o1);
+
+var o2 = new MyObject("마이콜", 20);
+o2.another ={
+    name: '정휘윤',
+    bir: "12-30"
+}
+
+
+var o2 = {
+    name: "마이콜",
+    age: 20,
+    another: {
+        name: "정휘윤",
+        bir: "12-30"
+    }
+}
+
+console.log(o1);  
 console.log(o2);

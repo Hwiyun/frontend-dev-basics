@@ -34,6 +34,7 @@ f.another = {
 }
 
 console.log(f);
+console.log("============ --- ============")
 f.another.print();
 
 console.log("=== 확장: 기본타입(primitive type)은 확장되지 않는다. ===");
@@ -48,6 +49,8 @@ i2.another = {
 }
 
 console.log(i2);
+console.log("===================")
+console.log(i1);
 
 i1.another = {};            // 유사객체 변환된다. new Number(i1).another = {};
 console.log(i1.another);    // 유사객체 변환된다. console.log(new Number(i1).another);
