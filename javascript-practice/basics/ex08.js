@@ -12,6 +12,7 @@ var f = function() {
 }
 
 console.log("=== 확장(object 타입) ===");
+
 o.another = {
     name: '마이콜',
     age: 20,
