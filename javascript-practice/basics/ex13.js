@@ -38,5 +38,7 @@ console.log(str8);
 var a = str7.split(" ");
 console.log(a);
 
+console.log("============")
+
 var a = str7.split(":");
 console.log(a);
