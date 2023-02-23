@@ -76,11 +76,3 @@ console.log(sum(10));
 console.log(sum(10, 20));
 console.log(sum(10, 20, 30));
 console.log(sum(10, 20, 30, 40, 50));
-
-sum(10, 20, 30);
-
-var o = {}
-o['0'] = 1;
-o.length = 1;
-
-o.splice 
