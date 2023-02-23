@@ -12,12 +12,15 @@ console.log(typeof(a1), a1 instanceof Array, a1.length);
 var a2 = new Array(10);
 console.log(typeof(a2), a2 instanceof Array, a2.length);
 
+console.log("=== 1 ===");
+
 // 배열의 크기를 지정하는 것은 별 의미가 없다.
 // 왜냐하면 동적으로 배열은 늘어나기 때문이다.
 a2[0] = 0;
 a2[5] = 5;
 a2[10] = 10;
 console.log(a2, a2.length);
+console.log("=== 1 ===");
 
 // 생성자 함수의 파라미터가 두 개 이상인 경우: 초기값 설정
 var a3 = new Array(0, 2, 4, 6, 8);
@@ -30,6 +33,7 @@ console.log("=== 배열 생성2: 리터럴을 사용하는 방법 ====");
 var a4 = [];
 console.log(typeof(a4), a4 instanceof Array, a4.length);
 
+console.log("=== 2 ===")
 // 배열 요소의 타입은 동일하지 않아도 된다.
 var a5 = [10, 'JavaScript', true, undefined, {
     name: '둘리',
@@ -49,7 +53,7 @@ console.log("=== Array vs Object ===");
 var a6 = [];
 a6[0] = 0;
 a6['1'] = 1;
-a6['5'] = 5;
+a6['10'] = 10;
 a6.name = '둘리';
 a6.age = 10;
 console.log(a6['0'], a6[1], a6['name'], a6.age, "length:" + a6.length);
@@ -64,7 +68,7 @@ o6.age = 10;
 console.log(o6['0'], o6[1], o6['name'], o6.age, "length:" + o6.length);
 
 // for ~ in
-console.log("=== for ~ in: 배열 =========")
+console.log("=== for ~ in: 객체 =========")
 for(prop in o6) {
     console.log(prop, o6[prop]);
 }
