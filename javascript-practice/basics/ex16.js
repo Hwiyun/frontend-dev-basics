@@ -10,7 +10,9 @@ function f1(a, b) {
 console.log(typeof(f1), f1 instanceof Function, f1(10, 20));
 
 console.log("=== 함수를 생성하는 방법2: 함수 리터럴 =====");
-var f2 = new Function("a", "b", "return a + b;");
+var f2 = function(a, b) {
+    return a + b;
+}
 
 console.log(typeof(f2), f2 instanceof Function, f2(10, 20));
 
