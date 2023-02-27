@@ -2,41 +2,39 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style type="text/css">
-* 		{ margin: 0; padding: 0}
-body	{
-	font-family: "맑은 고딕";
-	font-size: 0.75em;
-	color: #333;
-}
-h1		{ width:150px; margin:10px auto }
-ul		{ width:150px; margin:20px auto 0 auto; list-style-type:none; border-top:1px solid #bbb }
-li		{ 
-	width:130; 
-	padding:10px; 
-	border-width:0 1px 1px 1px; 
-	border-style: solid; 
-	background-color:#fff; 
-	border-color: #bbb; 
-	font-weight:bold; 
-	cursor:pointer 
-}
-li.on	{ background-color:#287FC2; color:#fff }		
-</style>
 <script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
 <script type="text/javascript">
-$(function(){
+$(function() {
+	setTimeout(function(){
+		// $("h2 a").attr("href", "https://www.douzone.com");
+		// $("h2 a").attr("target", "_blank");
+		// $("h2 a").attr("title", "우리회사 좋은회사~");
+		// $("h2 a").css("font-size", "0.75em");
+		
+		// 함수 체인
+		// $("h2 a")
+		//	.attr("href", "https://www.douzone.com")
+		//	.attr("target", "_blank")
+		//	.attr("title", "우리회사 좋은회사~")
+		//	.css("font-size", "0.75em");
+
+		$("h2 a")
+			.attr({
+				href: "https://www.douzone.com",
+				target: "_blank",
+				title: "우리회사 좋은회사~"
+			})
+			.css("font-size", "0.75em");
+
+	}, 2000);
 });  
 </script>
 </head>
 <body>
-	<h1>메뉴리스트</h1>
-	<ul>
-		<li>아이템1</li>
-		<li>아이템2</li>
-		<li>아이템3</li>
-		<li>아이템4</li>
-		<li>아이템5</li>
-	</ul>
+	<h1>DOM 조작 API - attr()</h1>
+
+	<h2>
+		<a href="">우리회사</a>
+	</h2>
 </body>
 </html>
