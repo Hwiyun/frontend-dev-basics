@@ -22,7 +22,7 @@ myAsyncFn02("data")
         console.log(result);
     })
     .catch(function(error, result) {
-       console.log(result);
+        console.log(result);
     });
 
 console.log("wait.......");
